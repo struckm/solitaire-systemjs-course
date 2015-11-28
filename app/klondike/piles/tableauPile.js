@@ -1,4 +1,5 @@
 import Pile from './pile.js';
+import _ from 'underscore';
 
 export default function TableauPile(cards, scoring) {
   Pile.call(this, cards, scoring);

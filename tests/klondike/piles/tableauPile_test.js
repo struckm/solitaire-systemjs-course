@@ -2,7 +2,7 @@ import Card from 'card';
 import '../../../app/klondike/klondike.js'
 import RemainderPile from '../../../app/klondike/piles/remainderPile.js';
 import TableauPile from '../../../app/klondike/piles/tableauPile.js';
-
+import { module, inject } from 'angular-mocks';
 
 describe("A tableau pile", function () {
   "use strict";

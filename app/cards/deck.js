@@ -1,4 +1,5 @@
 import Card from './card.js';
+import _ from 'underscore';
 
 export default function Deck() {
   this.unShuffled = function unShuffled() {

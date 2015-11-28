@@ -1,4 +1,5 @@
 import Deck from 'deck';
+import _ from 'underscore';
 
 describe("A game of klondike", function () {
   "use strict";

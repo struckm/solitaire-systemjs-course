@@ -1,12 +1,12 @@
 System.config({
-  baseURL: "/",
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {
     "optional": [
       "runtime",
       "optimisation.modules.system"
-    ]
+    ],
+    "stage": 0
   },
   paths: {
     "github:*": "jspm_packages/github/*",
@@ -14,9 +14,21 @@ System.config({
   },
 
   map: {
+    "angular": "github:angular/bower-angular@1.4.8",
+    "angular-mocks": "github:angular/bower-angular-mocks@1.4.8",
+    "angular-route": "github:angular/bower-angular-route@1.4.8",
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
+    "card": "cards/card.js",
     "core-js": "npm:core-js@1.2.6",
+    "deck": "cards/deck.js",
+    "underscore": "npm:underscore@1.8.3",
+    "github:angular/bower-angular-mocks@1.4.8": {
+      "angular": "github:angular/bower-angular@1.4.8"
+    },
+    "github:angular/bower-angular-route@1.4.8": {
+      "angular": "github:angular/bower-angular@1.4.8"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },

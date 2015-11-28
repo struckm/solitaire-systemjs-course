@@ -8,20 +8,15 @@ module.exports = function (config) {
     basePath: "./",
 
     files: [
-      "app/bower_components/angular/angular.js",
-      "app/bower_components/angular-route/angular-route.js",
-      "app/bower_components/angular-mocks/angular-mocks.js",
-      "app/bower_components/underscore/underscore.js"
     ],
 
     proxies: {
       '/node_modules': '/base/node_modules',
-      '/base/cards': '/base/app/cards'
+      '/base/cards': '/base/app/cards',
+      '/base/jspm_packages': '/base/app/jspm_packages'
     },
 
     jspm: {
-      config: 'app/config.js',
-      packages: 'app/bower_components/system.js/dist',
       serveFiles: [
         'app/**/*.js',
         'node_modules/babel-core/browser.js'

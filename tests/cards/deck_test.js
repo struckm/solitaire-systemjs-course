@@ -1,4 +1,5 @@
 import Deck from 'deck';
+import { module, inject } from 'angular-mocks';
 
 describe("A deck of cards", function () {
   "use strict";
