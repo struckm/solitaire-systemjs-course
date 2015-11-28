@@ -49,12 +49,12 @@
       "github:fatlinesofcode/ngDraggable@^0.1.8": {
         "dependencies": {
           "angular": "jspm:angular@1.4.8"
+        },
+        "shim": {
+          "ngDraggable": [
+            "angular"
+          ]
         }
-      },
-      "shim": {
-        "ngDraggable": [
-          "angular"
-        ]
       }
     }
   }
