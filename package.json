@@ -13,7 +13,7 @@
     "eslint": "^1.5.1",
     "http-server": "^0.8.4",
     "jasmine-core": "^2.3.4",
-    "jspm": "^0.16.15",
+    "jspm": "^0.16.11",
     "karma": "~0.13",
     "karma-chrome-launcher": "^0.2.0",
     "karma-firefox-launcher": "^0.1.6",
