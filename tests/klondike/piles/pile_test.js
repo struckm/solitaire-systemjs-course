@@ -1,4 +1,5 @@
 import Deck from 'deck';
+import Pile from '../../../app/klondike/piles/pile.js';
 
 describe("A pile", function () {
   "use strict";

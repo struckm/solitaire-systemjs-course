@@ -11,11 +11,7 @@ module.exports = function (config) {
       "app/bower_components/angular/angular.js",
       "app/bower_components/angular-route/angular-route.js",
       "app/bower_components/angular-mocks/angular-mocks.js",
-      "app/bower_components/underscore/underscore.js",
-      "app/klondike/piles/pile.js",
-      "app/klondike/piles/foundationPile.js",
-      "app/klondike/piles/remainderPile.js",
-      "app/klondike/piles/tableauPile.js"
+      "app/bower_components/underscore/underscore.js"
     ],
 
     proxies: {

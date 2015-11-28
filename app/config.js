@@ -10,4 +10,3 @@ babelOptions: {
 	stage: 0
 }
 });
-  
