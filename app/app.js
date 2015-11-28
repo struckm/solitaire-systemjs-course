@@ -1,5 +1,6 @@
-(function () {
-  "use strict";
+/* global angular */
+angular.module('solitaire', ['klondike', 'ngDraggable']);
 
-  angular.module("solitaire", ["klondike", "ngDraggable"]);
-})();
+angular.element(document).ready(() => {
+	angular.bootstrap(document, ['solitaire']);
+});
