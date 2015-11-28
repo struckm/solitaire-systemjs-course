@@ -1,3 +1,6 @@
+import Card from 'card';
+import '../../../app/klondike/klondike.js'
+
 describe("A tableau pile", function () {
   "use strict";
 

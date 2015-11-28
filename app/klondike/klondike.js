@@ -1,8 +1,8 @@
 /* global angular */
 
-import 'klondike/game.js';
-import 'klondike/board.js';
-import {Scoring} from 'klondike/scoring.js';
+import './game.js';
+import './board.js';
+import {Scoring} from './scoring.js';
 
 angular.module('klondike.scoring', [])
 	.service('scoring', [Scoring]);

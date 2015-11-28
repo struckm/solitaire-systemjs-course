@@ -1,3 +1,5 @@
+import Card from 'card';
+
 describe("The score", function () {
   "use strict";
 

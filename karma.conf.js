@@ -31,7 +31,8 @@ module.exports = function (config) {
         'node_modules/babel-core/browser.js'
       ],
       loadFiles: [
-        "tests/cards/*.js"
+        'tests/cards/*.js',
+        'tests/klondike/**/*.js'
       ]
     },
 

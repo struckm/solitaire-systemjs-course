@@ -1,3 +1,5 @@
+import Card from 'card';
+
 describe("A foundation pile", function () {
   "use strict";
 

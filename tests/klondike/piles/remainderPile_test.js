@@ -1,3 +1,6 @@
+import Card from 'card';
+import Deck from 'deck';
+
 describe("A remainder pile", function () {
   "use strict";
 
