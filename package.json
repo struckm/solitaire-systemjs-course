@@ -46,16 +46,16 @@
       "core-js": "npm:core-js@^1.1.4"
     },
     "overrides": {
--     "github:fatlinesofcode/ngDraggable@^0.1.8": {
--       "dependencies": {
--         "angular": "jspm:angular@1.4.8"
--       },
--       "shim": {
--         "ngDraggable": [
--           "angular"
--         ]
--       }
--     }
+      "github:fatlinesofcode/ngDraggable@^0.1.8": {
+        "dependencies": {
+          "angular": "jspm:angular@1.4.8"
+        },
+        "shim": {
+          "ngDraggable": [
+            "angular"
+          ]
+        }
+      }
     }
   }
 }
