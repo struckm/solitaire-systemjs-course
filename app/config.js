@@ -30,6 +30,9 @@ System.config({
     "github:angular/bower-angular-route@1.4.8": {
       "angular": "github:angular/bower-angular@1.4.8"
     },
+    "github:fatlinesofcode/ngDraggable@0.1.8": {
+      "angular": "github:angular/bower-angular@1.4.8"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
