@@ -1,4 +1,4 @@
-function Card(card) {
+export default function Card(card) {
   this.suit = card.suit;
   this.rank = card.rank;
   this.image = (Card.ranksInImagesOrder.indexOf(this.rank) * 4 + Card.suitsInImagesOrder.indexOf(this.suit) + 1) + ".png";
@@ -15,26 +15,3 @@ Card.prototype.turnUp = function () {
 Card.prototype.turnDown = function () {
   this.turnedUp = false;
 };
-
-function Deck() {
-  this.unShuffled = function unShuffled() {
-    return _.chain(Card.ranksInImagesOrder)
-      .map(function (rank) {
-        return Card.suitsInImagesOrder.map(function (suit) {
-          return {
-            suit: suit,
-            rank: rank
-          };
-        });
-      })
-      .flatten()
-      .map(function (card) {
-        return new Card(card);
-      })
-      .value();
-  };
-
-  this.shuffled = function shuffled() {
-    return _.shuffle(this.unShuffled());
-  };
-}

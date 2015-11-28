@@ -16,7 +16,7 @@ window.showModuleRelationships = function() {
 	
 	var moduleDefinitions = modules.map( function(module) {
 		var name = displayName(module.name);
-		return '[' + name + ']';
+		return '[' + name + '|' + module.metadata.format + ']';
 	});
 
 	var dependencyDefinitions = [];
@@ -27,7 +27,10 @@ window.showModuleRelationships = function() {
 	.forEach(function(module) {
 		var name = displayName(module.name);
 
-		var dependencies = module.deps		
+		var dependencies = module.deps
+		.map(function(dependency) {
+			return System.normalizeSync(dependency, module.name, module.address);
+		})
 		.map(displayName)
 		.map(function(dependencyName) {
 			return '[' + name + ']->[' + dependencyName + ']';
