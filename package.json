@@ -44,18 +44,6 @@
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
       "core-js": "npm:core-js@^1.1.4"
-    },
-    "overrides": {
-      "github:fatlinesofcode/ngDraggable@^0.1.8": {
-        "dependencies": {
-          "angular": "jspm:angular@1.4.8"
-        },
-        "shim": {
-          "ngDraggable": [
-            "angular"
-          ]
-        }
-      }
     }
   }
 }

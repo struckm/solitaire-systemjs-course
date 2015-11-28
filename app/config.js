@@ -22,6 +22,7 @@ System.config({
     "card": "cards/card.js",
     "core-js": "npm:core-js@1.2.6",
     "deck": "cards/deck.js",
+    "ngDraggable": "github:fatlinesofcode/ngDraggable@0.1.8",
     "underscore": "npm:underscore@1.8.3",
     "github:angular/bower-angular-mocks@1.4.8": {
       "angular": "github:angular/bower-angular@1.4.8"
