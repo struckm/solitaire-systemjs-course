@@ -8,3 +8,6 @@ tmp
 
 ## Directory-based project format:
 .idea/
+
+app/app.bundle.js
+app/app.bundle.js.map
