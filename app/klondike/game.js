@@ -1,9 +1,11 @@
-import Deck from '../cards/deck.js';
+import angular from 'angular';
+import _ from 'underscore';
+
+import { Deck } from 'cards';
+
 import TableauPile from './piles/tableauPile.js';
 import RemainderPile from './piles/remainderPile.js';
 import FoundationPile from './piles/foundationPile.js';
-import _ from 'underscore';
-import angular from 'angular';
 
 angular.module("klondike.game", [])
   .service("klondikeGame", ["scoring", KlondikeGame]);

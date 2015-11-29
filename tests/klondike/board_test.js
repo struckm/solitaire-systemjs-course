@@ -1,3 +1,5 @@
+import { module, inject } from 'angular-mocks';
+
 describe("A klondike board controller", function () {
   "use strict";
 

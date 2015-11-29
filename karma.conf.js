@@ -12,7 +12,6 @@ module.exports = function (config) {
 
     proxies: {
       '/node_modules': '/base/node_modules',
-      '/base/cards': '/base/app/cards',
       '/base/jspm_packages': '/base/app/jspm_packages'
     },
 
@@ -22,7 +21,6 @@ module.exports = function (config) {
         'node_modules/babel-core/browser.js'
       ],
       loadFiles: [
-        'tests/cards/*.js',
         'tests/klondike/**/*.js'
       ]
     },
@@ -36,7 +34,6 @@ module.exports = function (config) {
     plugins: [
       "karma-jspm",
       "karma-chrome-launcher",
-      "karma-firefox-launcher",
       "karma-jasmine",
       "karma-junit-reporter"
     ],

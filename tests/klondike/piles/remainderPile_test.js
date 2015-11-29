@@ -2,6 +2,8 @@ import Card from 'card';
 import Deck from 'deck';
 import RemainderPile from '../../../app/klondike/piles/remainderPile.js';
 
+import { module, inject } from 'angular-mocks';
+
 describe("A remainder pile", function () {
   "use strict";
 
