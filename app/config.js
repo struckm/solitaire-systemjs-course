@@ -12,33 +12,83 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-  bundles: {
-    "app.bundle.js": [
-      "app.js",
-      "github:angular/bower-angular@1.4.8",
+
+  depCache: {
+    "app.js": [
       "klondike/klondike.js",
-      "github:fatlinesofcode/ngDraggable@0.1.8",
-      "klondike/board.js",
+      "github:angular/bower-angular@1.4.8",
+      "github:fatlinesofcode/ngDraggable@0.1.8"
+    ],
+    "klondike/klondike.js": [
       "klondike/game.js",
-      "github:fatlinesofcode/ngDraggable@0.1.8/ngDraggable",
+      "klondike/board.js",
       "klondike/scoring.js",
-      "github:angular/bower-angular@1.4.8/angular",
+      "github:angular/bower-angular@1.4.8"
+    ],
+    "github:angular/bower-angular@1.4.8": [
+      "github:angular/bower-angular@1.4.8/angular"
+    ],
+    "github:fatlinesofcode/ngDraggable@0.1.8": [
+      "github:fatlinesofcode/ngDraggable@0.1.8/ngDraggable"
+    ],
+    "klondike/game.js": [
       "cards/deck.js",
-      "github:angular/bower-angular-route@1.4.8",
       "klondike/piles/tableauPile.js",
       "klondike/piles/remainderPile.js",
       "klondike/piles/foundationPile.js",
-      "npm:babel-runtime@5.8.34/helpers/create-class",
       "npm:underscore@1.8.3",
-      "npm:babel-runtime@5.8.34/helpers/class-call-check",
-      "cards/card.js",
-      "github:angular/bower-angular-route@1.4.8/angular-route",
-      "klondike/piles/pile.js",
+      "github:angular/bower-angular@1.4.8"
+    ],
+    "klondike/board.js": [
+      "github:angular/bower-angular@1.4.8",
+      "github:angular/bower-angular-route@1.4.8"
+    ],
+    "klondike/scoring.js": [
+      "npm:babel-runtime@5.8.34/helpers/create-class",
+      "npm:babel-runtime@5.8.34/helpers/class-call-check"
+    ],
+    "github:fatlinesofcode/ngDraggable@0.1.8/ngDraggable": [
+      "github:angular/bower-angular@1.4.8"
+    ],
+    "klondike/piles/tableauPile.js": [
       "npm:babel-runtime@5.8.34/core-js/object/create",
-      "npm:babel-runtime@5.8.34/core-js/object/define-property",
-      "npm:underscore@1.8.3/underscore",
-      "npm:core-js@1.2.6/library/fn/object/define-property",
-      "npm:core-js@1.2.6/library/fn/object/create",
+      "klondike/piles/pile.js",
+      "npm:underscore@1.8.3"
+    ],
+    "cards/deck.js": [
+      "cards/card.js",
+      "npm:underscore@1.8.3"
+    ],
+    "klondike/piles/remainderPile.js": [
+      "npm:babel-runtime@5.8.34/core-js/object/create",
+      "klondike/piles/pile.js"
+    ],
+    "klondike/piles/foundationPile.js": [
+      "npm:babel-runtime@5.8.34/core-js/object/create",
+      "klondike/piles/pile.js"
+    ],
+    "npm:underscore@1.8.3": [
+      "npm:underscore@1.8.3/underscore"
+    ],
+    "github:angular/bower-angular-route@1.4.8": [
+      "github:angular/bower-angular-route@1.4.8/angular-route"
+    ],
+    "npm:babel-runtime@5.8.34/helpers/create-class": [
+      "npm:babel-runtime@5.8.34/core-js/object/define-property"
+    ],
+    "npm:babel-runtime@5.8.34/core-js/object/create": [
+      "npm:core-js@1.2.6/library/fn/object/create"
+    ],
+    "github:angular/bower-angular-route@1.4.8/angular-route": [
+      "github:angular/bower-angular@1.4.8"
+    ],
+    "npm:babel-runtime@5.8.34/core-js/object/define-property": [
+      "npm:core-js@1.2.6/library/fn/object/define-property"
+    ],
+    "npm:core-js@1.2.6/library/fn/object/create": [
+      "npm:core-js@1.2.6/library/modules/$"
+    ],
+    "npm:core-js@1.2.6/library/fn/object/define-property": [
       "npm:core-js@1.2.6/library/modules/$"
     ]
   },
@@ -51,8 +101,11 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "card": "cards/card.js",
     "core-js": "npm:core-js@1.2.6",
+    "css": "github:systemjs/plugin-css@0.1.20",
     "deck": "cards/deck.js",
+    "image": "github:systemjs/plugin-image@0.1.0",
     "ngDraggable": "github:fatlinesofcode/ngDraggable@0.1.8",
+    "text": "github:systemjs/plugin-text@0.0.3",
     "underscore": "npm:underscore@1.8.3",
     "github:angular/bower-angular-mocks@1.4.8": {
       "angular": "github:angular/bower-angular@1.4.8"
